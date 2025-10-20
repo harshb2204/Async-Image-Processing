@@ -1,13 +1,14 @@
 package org.harsh.asyncimageprocessing.image;
 
 import java.awt.image.BufferedImage;
-import java.nio.Buffer;
 
 public class ImageData {
 
     private BufferedImage image;
     private int i;
     private int j;
+    private int x;
+    private int y;
 
     public ImageData(BufferedImage image, int i, int j, int x, int y) {
         this.image = image;
@@ -16,8 +17,6 @@ public class ImageData {
         this.x = x;
         this.y = y;
     }
-
-    private int x;
 
     public BufferedImage getImage() {
         return image;
@@ -58,7 +57,5 @@ public class ImageData {
     public void setY(int y) {
         this.y = y;
     }
-
-    private int y;
 
 }

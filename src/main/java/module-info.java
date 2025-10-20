@@ -10,8 +10,9 @@ module org.harsh.asyncimageprocessing {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
-    requires java.desktop;
+    requires javafx.swing;
 
     opens org.harsh.asyncimageprocessing to javafx.fxml;
     exports org.harsh.asyncimageprocessing;
+    exports org.harsh.asyncimageprocessing.image;
 }
