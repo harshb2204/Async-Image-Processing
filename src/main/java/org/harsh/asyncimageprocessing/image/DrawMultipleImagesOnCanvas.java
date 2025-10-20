@@ -42,17 +42,17 @@ public class DrawMultipleImagesOnCanvas {
         queue.offer(imageData);
     }
 
-    public void initialize(Stage primaryStage){
+    public void initialize(Stage primaryStage, int imageWidth, int imageHeight){
 
         this.primaryStage = primaryStage;
 
-        this.canvas = new Canvas(1920, 1080);
+        this.canvas = new Canvas(imageWidth, imageHeight);
         this.graphicsContext = canvas.getGraphicsContext2D();
-        graphicsContext.clearRect(0, 0, 1920, 1080);
+        graphicsContext.clearRect(0, 0, imageWidth, imageHeight);
         
         // Create a Scene with the canvas and show it
         StackPane root = new StackPane(canvas);
-        Scene scene = new Scene(root, 1920, 1080);
+        Scene scene = new Scene(root, imageWidth, imageHeight);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Async Image Processing");
         primaryStage.show();

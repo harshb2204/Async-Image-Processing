@@ -23,7 +23,7 @@ public class HelloApplication extends Application {
         BufferedImage image = imageIO.readImage("D:\\AsyncImageProcessing\\src\\main\\java\\org\\harsh\\asyncimageprocessing\\io\\image.jpg");
 
         DrawMultipleImagesOnCanvas drawMultipleImagesOnCanvas = DrawMultipleImagesOnCanvas.getInstance();
-        drawMultipleImagesOnCanvas.initialize(stage);
+        drawMultipleImagesOnCanvas.initialize(stage, image.getWidth(), image.getHeight());
         ImageProcessor processor = new ImageProcessor();
 
         ImageFilter imageFilter = new GreyScaleFilter();
