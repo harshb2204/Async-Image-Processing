@@ -46,7 +46,7 @@ public class DrawMultipleImagesOnCanvas {
 
         this.primaryStage = primaryStage;
 
-        this.canvas = new Canvas(imageWidth, imageHeight);
+        this.canvas = new Canvas(imageWidth,    imageHeight);
         this.graphicsContext = canvas.getGraphicsContext2D();
         graphicsContext.clearRect(0, 0, imageWidth, imageHeight);
         
